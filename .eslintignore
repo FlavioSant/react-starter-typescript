@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules
+# App build output
+build
+# App assets folder
+assets/
+# App config files
+babel.config.js
+webpack.config.js

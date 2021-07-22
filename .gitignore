@@ -1,0 +1,10 @@
+# project build output
+build/
+# dotenv environment variables file
+.env
+# Dependency directories
+node_modules/
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
