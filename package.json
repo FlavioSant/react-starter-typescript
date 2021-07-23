@@ -6,6 +6,7 @@
   "author": "Flavio Santos <flaviohenrique_santos@hotmail.com>",
   "scripts": {
     "build": "NODE_ENV=production webpack --mode production",
+    "build:server": "./.docker-build",
     "dev": "NODE_ENV=development webpack serve --mode development",
     "prepare": "husky install"
   },

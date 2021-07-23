@@ -70,6 +70,7 @@ module.exports = {
     contentBase: join(__dirname, 'public'),
     historyApiFallback: true,
     open: true,
+    hot: true,
     port: 3000,
   },
 };

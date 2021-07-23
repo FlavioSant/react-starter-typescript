@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+/* eslint-disable */
+const { config } = require('dotenv-safe');
+
+const { required } = config();
+
+const path = require('path');
+const { version } = require(path.join(__dirname, 'package.json'));
+const { execSync } = require('child_process');
+
+const image = process.env.APP_IMAGE;
+
+const args = Object.keys(required)
+  .map(key => `--build-arg '${key}=${required[key].replace(/'/, "\\'")}'`)
+  .join(' ');
+
+execSync(`docker build -t ${image}:latest ${args} .`, {
+  stdio: 'inherit',
+});
+execSync(`docker tag ${image}:latest ${image}:${version}`, {
+  stdio: 'inherit',
+});
+execSync(`docker push ${image}:latest`, { stdio: 'inherit' });
+execSync(`docker push ${image}:${version}`, { stdio: 'inherit' });

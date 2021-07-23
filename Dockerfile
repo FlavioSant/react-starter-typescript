@@ -2,6 +2,8 @@
 
 FROM node:alpine as build
 
+ARG APP_NAME
+ARG APP_IMAGE
 ARG API_URL
 
 ENV API_URL ${API_URL}

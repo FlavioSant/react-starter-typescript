@@ -7,3 +7,4 @@ assets/
 # App config files
 babel.config.js
 webpack.config.js
+.docker-build
