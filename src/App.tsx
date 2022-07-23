@@ -2,7 +2,7 @@ import { Greetings } from './components/Greetings';
 
 import { GlobalStyles } from './styles/global';
 
-const App: React.FC = () => {
+export const App = () => {
   return (
     <>
       <GlobalStyles />
@@ -10,5 +10,3 @@ const App: React.FC = () => {
     </>
   );
 };
-
-export default App;

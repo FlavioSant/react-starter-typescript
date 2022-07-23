@@ -2,7 +2,7 @@ import { Containter } from './styles';
 
 import logoImg from '../../assets/logo.png';
 
-const Greetings: React.FC = () => {
+export const Greetings = () => {
   return (
     <Containter>
       <img src={logoImg} alt="React Starter" />
@@ -14,5 +14,3 @@ const Greetings: React.FC = () => {
     </Containter>
   );
 };
-
-export { Greetings };

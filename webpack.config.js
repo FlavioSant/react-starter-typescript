@@ -67,7 +67,6 @@ module.exports = {
   ].filter(Boolean),
 
   devServer: {
-    contentBase: join(__dirname, 'public'),
     historyApiFallback: true,
     open: true,
     hot: true,
