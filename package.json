@@ -7,8 +7,7 @@
   "scripts": {
     "build": "NODE_ENV=production webpack --mode production",
     "build:server": "./.docker-build",
-    "dev": "set NODE_ENV=development&&webpack serve --mode development",
-    "prepare": "husky install"
+    "dev": "set NODE_ENV=development&&webpack serve --mode development"
   },
   "dependencies": {
     "core-js": "^3.23.5",
